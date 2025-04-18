@@ -68,11 +68,12 @@ button {
     display: flex;
     align-items: center;
 }
-#btn-1 p {
+    #btn-1 p {
   color: white;
   font-size: 1.25em;
   font-weight: 500;
 }
+/* ---responsive part---- */
 
 @media screen and (max-width: 576px) {
   * {
