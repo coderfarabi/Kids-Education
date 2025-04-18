@@ -4,11 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
-
-#sec-1 {
-  margin: 0em 8.75em;
+:root {
+    --skyblue: #01ACFD;
+}
+main {
+  margin: 0vw clamp(1.6em, 9vw, 140px);
 }
 /*---- nav bar style-----*/
 .hamburger {
@@ -16,7 +18,7 @@
 }
 
 nav {
-  margin: 1.2em 8.75em;
+  margin: 1.2em clamp(1.6em, 9vw, 140px);
   display: flex;
   justify-content: space-between;
 }
@@ -49,7 +51,7 @@ nav {
   color: orange;
 }
 #nav-link-2 {
-  color: skyblue;
+  color: var(--skyblue);
 }
 #nav-link-3 {
   color: rgba(5, 212, 223);
@@ -59,27 +61,64 @@ nav {
 }
 button {
   background-color: orange;
-  padding: 0.625em 3.75em;
+  padding: 0.625em 3em;
   border-radius: 0.78em;
   border: none;
-  /* font-size: 1.2em; */
-}
-#btn-1 {
-    display: flex;
-    align-items: center;
-}
-    #btn-1 p {
   color: white;
   font-size: 1.25em;
   font-weight: 500;
 }
+#btn-1 {
+  display: flex;
+  align-items: center;
+}
+/* ------- banner part ------ */
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.125em;
+  /* flex:1; */
+}
+#banner-left-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+#banner-header p {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #000000;
+}
+#banner-header span {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #000000;
+}
+#banner-pera {
+  font-size: 1.25em;
+}
+#btn-2 {
+  background-color: black;
+}
+#banner-right-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#banner-right-part img {
+    max-width: 28vw;
+    height: auto;
+}
+
+
 /* ---responsive part---- */
 
 @media screen and (max-width: 576px) {
   * {
-    font-size: 12px;
+    font-size: 10px;
   }
-  #sec-1 {
+  main {
     margin: 0em 1.6em;
   }
   nav {
@@ -99,5 +138,16 @@ button {
   .nav-links,
   #btn-1 {
     display: none;
+  }
+
+  /* banner */
+  #banner {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin : 2.2em 1em;
+}
+  #banner img {
+    max-width: 100%;
+    height: auto;
   }
 }
