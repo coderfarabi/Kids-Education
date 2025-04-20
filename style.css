@@ -11,10 +11,13 @@
   --myblue: rgba(93, 88, 239, 1);
 }
 main {
-  padding: 0vw clamp(1.6em, 9vw, 140px);
-  background: linear-gradient(to top, rgba(255, 166, 0, 0.3), #ffffff00, #ffffff00);
-
-  
+  padding: 0vw clamp(1em, 9vw, 140px);
+  background: linear-gradient(
+    to top,
+    rgba(255, 166, 0, 0.3),
+    #ffffff00,
+    #ffffff00
+  );
 }
 /*---- nav bar style-----*/
 .hamburger {
@@ -118,10 +121,10 @@ button {
 
 /* ------main section------ */
 #sec1 {
-    background-image: url(assets/bg.png);
-    background-size: 80%;
-    background-repeat: repeat;
-    
+  background-image: url(assets/bg.png);
+  background-size: 80%;
+  background-repeat: repeat;
+  padding: 1.5em 0em ;
 }
 #sec-1 {
   text-align: center;
@@ -131,10 +134,14 @@ button {
   margin: 3.75em 0em;
 }
 #sec-1 h3 {
-  font-size: em;
   font-weight: bold;
   color: #000000;
   font-size: 2.875em;
+}
+#sec-1 h4 {
+  font-weight: bold;
+  color: #000000;
+  font-size: 1.5em;
 }
 #sec-1-card {
   display: flex;
@@ -205,6 +212,7 @@ button {
   gap: 3.75em;
   margin: 3.75em 0em;
 }
+/* #sec-2 {display: none;} */
 #sec-2 > h3 {
   text-align: center;
   font-size: 2.875em;
@@ -223,6 +231,7 @@ button {
   grid-row: span 2;
   grid-column: span 2;
 }
+
 #story-1,
 #story-2,
 #story-3,
@@ -259,21 +268,21 @@ button {
   padding: 3.625em 2.2em 1.8em 2.2em;
 }
 h5 {
-    font-size: 1em;
-    font-weight: bold;
+  font-size: 1em;
+  font-weight: bold;
 }
 #story-1 h5 {
   font-size: 1.5em;
 }
 .story-text p {
-    margin-top: 3em;
-    padding: 0 0 3em 0;
+  margin-top: 3em;
+  padding: 0 0 3em 0;
 }
 .story-img button {
-    font-size: .9em;
-    padding: 1em;
-    border-radius: 3em;
-    /* max-width: 9em; */
+  font-size: 0.9em;
+  padding: 1em;
+  border-radius: 3em;
+  /* max-width: 9em; */
 }
 #story-1 button {
   background-color: rgb(52, 182, 196);
@@ -293,22 +302,27 @@ h5 {
 #sec-2-btn {
   text-align: center;
 }
-#sec-2-btn button{
+#sec-2-btn button {
   background-color: #000000;
 }
 
-
-
-
-
-/* ---responsive part---- */ 
+/* ---responsive part---- */
 
 @media screen and (max-width: 576px) {
   * {
     font-size: 10px;
   }
   main {
-    margin: 0em 1.6em;
+    padding: 0em 1.6em;
+    background: linear-gradient(
+      to top,
+      rgba(255, 166, 0, 0.3),
+      #ffffff00,
+      #ffffff00,
+      #ffffff00,
+      #ffffff00,
+      #ffffff00
+    );
   }
   nav {
     margin: 0em;
@@ -339,4 +353,23 @@ h5 {
     max-width: 100%;
     height: auto;
   }
+  /* ----Standard Curriculum part----- */
+  #sec-1-card {
+    flex-direction: column;
+  }
+  #card-1,
+  #card-2,
+  #card-3 {
+    padding: 3.25em 10em;
+  }
+  #sec-1-arrow {
+    display: none;
+  }
+  #story-1 {
+    display: none;
+  }
+  #sec-2-story {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
 }
