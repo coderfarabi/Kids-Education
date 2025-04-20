@@ -11,7 +11,10 @@
   --myblue: rgba(93, 88, 239, 1);
 }
 main {
-  margin: 0vw clamp(1.6em, 9vw, 140px);
+  padding: 0vw clamp(1.6em, 9vw, 140px);
+  background: linear-gradient(to top, rgba(255, 166, 0, 0.3), #ffffff00, #ffffff00);
+
+  
 }
 /*---- nav bar style-----*/
 .hamburger {
@@ -116,6 +119,9 @@ button {
 /* ------main section------ */
 #sec1 {
     background-image: url(assets/bg.png);
+    background-size: 80%;
+    background-repeat: repeat;
+    
 }
 #sec-1 {
   text-align: center;
@@ -264,12 +270,32 @@ h5 {
     padding: 0 0 3em 0;
 }
 .story-img button {
-    font-size: 1em;
-    padding: 1.1em;
+    font-size: .9em;
+    padding: 1em;
     border-radius: 3em;
     /* max-width: 9em; */
 }
-
+#story-1 button {
+  background-color: rgb(52, 182, 196);
+}
+#story-2 button {
+  background-color: rgba(93, 88, 240, 1);
+}
+#story-3 button {
+  background-color: rgba(149, 178, 38, 1);
+}
+#story-4 button {
+  background-color: rgb(61, 177, 46);
+}
+#story-5 button {
+  background-color: rgb(232, 60, 60);
+}
+#sec-2-btn {
+  text-align: center;
+}
+#sec-2-btn button{
+  background-color: #000000;
+}
 
 
 
