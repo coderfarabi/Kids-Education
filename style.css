@@ -114,6 +114,9 @@ button {
 }
 
 /* ------main section------ */
+#sec1 {
+    background-image: url(assets/bg.png);
+}
 #sec-1 {
   text-align: center;
   display: flex;
@@ -175,24 +178,104 @@ button {
   color: var(--myblue);
 }
 #sec-1-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
 }
 #sec-1-arrow i {
-    color: #ffffff;
-    background-color: orange;
-    border-radius: 100%;
-    padding: 1.1em .8em;
-    /* font-weight: bolder; */
+  color: #ffffff;
+  background-color: orange;
+  border-radius: 100%;
+  padding: 1.1em 0.8em;
+  /* font-weight: bolder; */
+}
+
+/* ------our story part------- */
+#sec-2 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 3.75em;
+  margin: 3.75em 0em;
+}
+#sec-2 > h3 {
+  text-align: center;
+  font-size: 2.875em;
+  font-weight: bold;
+  color: #000000;
+}
+
+#sec-2-story {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  gap: 1.17em;
+  justify-content: center;
+  padding: 1.25em 0em;
+}
+#story-1 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+#story-1,
+#story-2,
+#story-3,
+#story-4,
+#story-5 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-items: center;
+  /* align-self: center; */
+  border-radius: 1em;
+}
+.story-img {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.story-img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+}
+.story-img button {
+  position: absolute;
+  bottom: 0;
+  bottom: 0;
+  translate: 2.2em 50%;
+  z-index: 100;
+}
+.story-text {
+  color: #000000;
+  padding: 3.625em 2.2em 1.8em 2.2em;
+}
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+#story-1 h5 {
+  font-size: 1.5em;
+}
+.story-text p {
+    margin-top: 3em;
+    padding: 0 0 3em 0;
+}
+.story-img button {
+    font-size: 1em;
+    padding: 1.1em;
+    border-radius: 3em;
+    /* max-width: 9em; */
 }
 
 
 
 
 
-/* ---responsive part---- */
+
+/* ---responsive part---- */ 
 
 @media screen and (max-width: 576px) {
   * {
