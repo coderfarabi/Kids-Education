@@ -124,7 +124,7 @@ button {
   background-image: url(assets/bg.png);
   background-size: 80%;
   background-repeat: repeat;
-  padding: 1.5em 0em ;
+  padding: 1.5em 0em;
 }
 #sec-1 {
   text-align: center;
@@ -201,7 +201,6 @@ button {
   background-color: orange;
   border-radius: 100%;
   padding: 1.1em 0.8em;
-  /* font-weight: bolder; */
 }
 
 /* ------our story part------- */
@@ -212,7 +211,6 @@ button {
   gap: 3.75em;
   margin: 3.75em 0em;
 }
-/* #sec-2 {display: none;} */
 #sec-2 > h3 {
   text-align: center;
   font-size: 2.875em;
@@ -241,7 +239,6 @@ button {
   flex-direction: column;
   background-color: white;
   justify-items: center;
-  /* align-self: center; */
   border-radius: 1em;
 }
 .story-img {
@@ -262,6 +259,10 @@ button {
   bottom: 0;
   translate: 2.2em 50%;
   z-index: 100;
+  font-size: 1em;
+  padding: .7em 1em;
+
+  border-radius: 3em;
 }
 .story-text {
   color: #000000;
@@ -277,12 +278,6 @@ h5 {
 .story-text p {
   margin-top: 3em;
   padding: 0 0 3em 0;
-}
-.story-img button {
-  font-size: 0.9em;
-  padding: 1em;
-  border-radius: 3em;
-  /* max-width: 9em; */
 }
 #story-1 button {
   background-color: rgb(52, 182, 196);
@@ -305,7 +300,7 @@ h5 {
 #sec-2-btn button {
   background-color: #000000;
 }
-/* ------footer part------  */
+/* ------footer part---------  */
 /* left part */
 footer {
   background-color: rgba(1, 172, 253, 1);
@@ -327,12 +322,11 @@ footer {
 #f-logo img {
   width: 6em;
 }
-#f-name p{
+#f-name p {
   font-size: 2.62em;
   font-weight: bold;
-  
 }
-#f-description{
+#f-description {
   width: 60%;
 }
 #f-description p {
@@ -359,15 +353,14 @@ footer {
 #f-socials h5 {
   font-size: 1.625em;
   font-weight: bold;
-  padding : 0 0 1em 0;
+  padding: 0 0 1em 0;
 }
 #f-socials-link {
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
-  gap : .625em;
+  gap: 0.625em;
 }
-
 
 /* ---responsive part---- */
 
@@ -431,8 +424,14 @@ footer {
   #story-1 {
     display: none;
   }
+
+  /* -------Our Stories part-------- */
   #sec-2-story {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+  .story-img button {
+    font-size: 1em;
+    padding: .7em 1em;
   }
 
   /* ---------footer part-------- */
@@ -441,11 +440,9 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2em;
-
   }
   #f-right {
     display: flex;
     flex-direction: column;
   }
-
 }
