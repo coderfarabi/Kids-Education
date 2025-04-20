@@ -305,6 +305,69 @@ h5 {
 #sec-2-btn button {
   background-color: #000000;
 }
+/* ------footer part------  */
+/* left part */
+footer {
+  background-color: rgba(1, 172, 253, 1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 7.68em 8.75em;
+  color: white;
+}
+#f-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.18em;
+}
+#f-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.625em;
+}
+#f-logo img {
+  width: 6em;
+}
+#f-name p{
+  font-size: 2.62em;
+  font-weight: bold;
+  
+}
+#f-description{
+  width: 60%;
+}
+#f-description p {
+  font-size: 1.25em;
+}
+/* right part  */
+#f-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.18em;
+}
+
+#f-links dt {
+  padding: 0 0 1em 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  /* line-height: 3; */
+}
+#f-links a {
+  text-decoration: none;
+  color: white;
+  line-height: 2.5;
+}
+#f-socials h5 {
+  font-size: 1.625em;
+  font-weight: bold;
+  padding : 0 0 1em 0;
+}
+#f-socials-link {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  gap : .625em;
+}
+
 
 /* ---responsive part---- */
 
@@ -370,6 +433,19 @@ h5 {
   }
   #sec-2-story {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  /* ---------footer part-------- */
+  footer {
+    padding: 3.75em 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+  }
+  #f-right {
+    display: flex;
+    flex-direction: column;
   }
 
 }
